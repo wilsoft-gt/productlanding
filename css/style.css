@@ -1,0 +1,774 @@
+/* estilo para el cuerpo del documento */
+*:focus {
+    outline: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: #eff7ff;
+}
+
+
+/* ------------------------------------------------- */
+
+/* * * * * * * * * smartphones * * * * * * * * * * * */
+
+/* ------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+    header {
+        /* height: 50em; */
+        color: rgb(211, 211, 211);
+    }
+    #header-img {
+        display: none;
+    }
+
+    hr {
+        display: none;
+    }
+    /**********************************************************/
+    /*******                   Nav bar                  *******/
+    /**********************************************************/
+    #nav-bar {
+        width: 100%;
+        background-color: black;
+        position: fixed;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    /* estiliza las dosprimeras opciones el menu y el logo */
+    #nav-bar #menu-options {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: space-around;
+    }
+    /* padding automatico a los botones */
+    .nav-padding {
+        padding: 1em 1.5em;
+    }
+    /* valor inicial del boton ocultar */
+    #menu-button-o {
+        display: none;
+    }
+    /* valor inicial del menu */
+    #nav-bar #nav-menu {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        color: white;
+        list-style-type: none;
+    }
+    .nav-link {
+        text-decoration: none;
+        color: white;
+    }
+    #nav-bar #nav-menu li {
+        border-top: 1px solid white;
+        padding: 1em;
+        text-align: center;
+    }
+    /* --------------------------------------------------- */
+    /**********************************************************/
+    /*******                 jumbotron                  *******/
+    /**********************************************************/
+    #headerDiv {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        height: 35em;
+        background-image: url(../IMG/render\ final.png), linear-gradient(to bottom right, #4568dc, #b06ab3 );
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    #headerInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2em;
+        background-image: linear-gradient(to top, #000000, #ffffff00);
+    }
+
+    /**********************************************************/
+    /*******                 main                  *******/
+    /**********************************************************/
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    /* video info */
+    #videoInfo {
+        text-align: center;
+        padding: 3em 0;
+    }
+    #videoInfoText {
+        padding: 0 3em;
+    }
+    #videoInfo i {
+        font-size: 3em;
+    }
+    video {
+        max-width: 100%;
+    }
+    /* materiales */
+    #designInfo {
+        text-align: center;
+        padding: 3em;
+        background-color: #00000075;
+        background-image: url(../IMG/botones.png);
+        background-blend-mode: color;
+        background-position: center;
+        background-size: cover;
+        color: rgb(216, 216, 216);
+    }
+    #designInfo i {
+        font-size: 4em;
+    }
+
+    #imageDesignInfo {
+        display: none;
+    }
+
+
+    /* camara */
+    #cameraInfo {
+        text-align: center;
+        padding: 4em;
+        background-color: #00000075;
+        background-image: url(../IMG/camara.png);
+        background-blend-mode: color;
+        background-position: center;
+        background-size: cover;
+        color: rgb(216, 216, 216);
+    }
+    #cameraInfo i {
+        font-size: 4em;
+    }
+    #imageCameraInfo {
+        display: none;
+    }
+
+    /* screen */
+    #screnInfo {
+        text-align: center;
+        padding: 4em;
+        background-color: #00000075;
+        background-image: url(../IMG/pantalla.png);
+        background-blend-mode: color;
+        background-position: center;
+        background-size: cover;
+        color: rgb(216, 216, 216);
+    }
+    #screnInfo i {
+        font-size: 4em;
+    }
+
+    #imageScreenInfo {
+        display: none;
+    }
+
+
+    /* sonido */
+    #sound {
+        text-align: center;
+        padding: 4em;
+        background-color: #00000075;
+        background-image: url(../IMG/speaker.png);
+        background-blend-mode: color;
+        background-position: center;
+        background-size: cover;
+        color: rgb(216, 216, 216);
+    }
+    #sound i {
+        font-size: 4em;
+    }
+    #imageSoundInfo {
+        display: none;
+    }
+
+    /**********************************************************/
+    /*******         Colores disponibles                *******/
+    /**********************************************************/
+    #phoneColors {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #colors {
+        display: block;
+        max-width: 75%;
+        height: auto;
+    }
+
+    #colorsAvailable {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .circles {
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+    }
+
+    .gold {
+        background-color: #F7E3A8;
+    }
+    .platinum {
+        background-color: #BAC0C0;
+    }
+    .blueSteel {
+        background-color: #7170CB;
+    }
+    .brownLeather {
+        background-color: #C86C2C;
+    }
+    .blackLeather {
+        background-color: #3B3B3B;
+    }
+
+    /**********************************************************/
+    /*******         Colores disponibles                *******/
+    /**********************************************************/
+    #SpectsSumary {
+        width: 100%;
+        padding: 4em 0;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #SpectsSumary i {
+        font-size: 3em;
+    }
+
+    #specsSumaryText {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+    }
+
+    #specsTitle ul, #descriptionItem ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #specsTitle {
+        color: #666666;
+        text-align: left;
+    }
+
+    /**********************************************************/
+    /*******               Subscribirse                 *******/
+    /**********************************************************/
+    #PreorderForm {
+        background-color: #d4d4d4;
+        padding: 3em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #email {
+        width: 25em;
+        height: 3em;
+    }
+
+    #submit {
+        background-color: rgb(243, 186, 0);
+        border: none;
+        height: 2.5em;
+        width: 7em;
+    }
+
+    /**********************************************************/
+    /*******                   Footer                   *******/
+    /**********************************************************/
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #2e2e2e;
+        height: 2em;
+        color: #666666;
+    }
+}
+
+/* ------------------------------------------------- */
+
+/* * * * * * * * * computadoras * * * * * * * * * * * */
+
+/* ------------------------------------------------- */
+
+@media screen and (min-width: 769px) {
+
+    /**********************************************************/
+    /*******                   Header                   *******/
+    /**********************************************************/
+    /* definimos el alto del header */
+    i { 
+        text-shadow: 4px 4px 9px rgba(150, 150, 150, 1);
+        color: #2e323a;
+    }
+
+    /* Original colors b06ab3 4568dc */
+
+    header {
+        display: flex;
+        height: 55em;
+
+        background: linear-gradient(270deg, #202329 , #6e6d69);
+        background-size: 200% 200%;
+        
+        -webkit-animation: bg-animation 10s ease infinite;
+        -moz-animation: bg-animation 10s ease infinite;
+        animation: bg-animation 10s ease infinite;
+
+    }
+
+
+    /*******                   Nav bar                  *******/
+    /* propiedades del nav var, posicion fixed, alineamos las 
+    opciones horizontalmente. Sobreponemos el menu a todo */
+    #nav-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+        height: 4em;
+        background-color: rgba(0, 0, 0, 0.514);
+        color: #feeb53;
+    }
+
+    /* propiedades de la primer parte que contiene el 
+    logo y los comandos de la verison mobile */
+    #menu-options {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: auto;
+    }
+
+    /* escondemos los botones para mostrar y esconder el menu mobile */
+    #menu-button-m, #menu-button-o {
+        display: none;
+    }
+
+    /* centramos el logo y le damos el tamaño */
+    #logo {
+        width: 6em;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    /* contenedor del menu principal con las opciones para navegar */
+    #nav-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        
+    }
+
+
+    /* menu con opciones para navegar */
+    .nav-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 0 4em 0 4em;
+        text-decoration: none;
+        color: feeb53;
+    }
+
+    /* al poner el mouse sobre el link el background cambia */
+    #nav-menu li:hover {
+        background-color: darkgray;
+    }
+
+
+    /*******              Header info               *******/
+    /* con info principal para el jumbotron */
+    #headerDiv {
+        height: 100%;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* damos el espacio entre la imagen del telefono y el titulo */
+    #whitespace {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* imagen del lado izquierdo */
+    #header-img {
+        height: auto;
+        max-width: 85%;
+    }
+
+    /* texto del jumbotron */
+    #headerInfo {
+        width: 50%;
+        color: #feeb53;
+        text-shadow: 4px 4px 9px rgb(17, 17, 17);
+    }
+
+    #headerInfo h1 {
+        font-size: 4em;
+    }
+
+    #headerInfo p {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+
+
+    /**********************************************************/
+    /*******              Main section                  *******/
+    /**********************************************************/
+    /* seccion con video info */
+    #videoinfo {
+        width: auto;
+        padding: 5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #2e323a;
+    }
+
+    #videoContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(/IMG/video\ wrapper.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        /* border: red dotted 1px; */
+        height: 23em;
+        width: 41em;
+    }
+
+    #videoInfoText {
+        width: 40%;
+        text-align: center;
+    }
+
+    #videoInfoText i {
+        font-size: 5em;
+    }
+
+    
+    /* tamaño del video en la seccion de info */
+    #video {
+        width: 82.25%;
+        height: 83.75%;
+        display: block;
+        background-color: black;
+        /* border: blue dotted 1px; */
+        transform: translate(-2px, px);
+    }
+
+    /*         designInfo            */
+    #designInfo {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: #2e323a;
+
+    }
+
+    #imageDesignInfo {
+        width: 40%;
+        height: auto;
+    }
+
+
+     .imgBgn {
+        height: auto;
+        max-width: 100%;
+    }
+
+    #textDesignInfo {
+        width: 60%;
+        text-align: center;
+        padding: 0 7em;
+    }
+
+    #textDesignInfo i {
+        font-size: 5em;
+    }
+
+    /*         camera info            */
+
+    #cameraInfo {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        color: #2e323a;
+    }
+
+    #imageCameraInfo {
+        width: 40%;
+        height: auto;
+    }
+
+    #textCameraInfo {
+        width: 60%;
+        text-align: center;
+        padding: 0 7em;
+    }
+
+    #textCameraInfo i {
+        font-size: 5em;
+    }
+
+    /*         screen info            */
+
+    #screnInfo {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: #2e323a;
+    }
+
+    #imageScreenInfo {
+        width: 40%;
+        height: auto;
+    }
+
+    #textScreenInfo {
+        width: 60%;
+        text-align: center;
+        padding: 0 7em;
+    }
+
+    #textScreenInfo i {
+        font-size: 5em;
+    }
+
+    /*         sound info            */
+
+    #sound {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        color: #2e323a;
+    }
+
+    #imageSoundInfo {
+        width: 40%;
+        height: auto;
+    }
+
+    #textSoundInfo {
+        width: 60%;
+        text-align: center;
+        padding: 0 7em;
+    }
+
+    #textSoundInfo i {
+        font-size: 5em;
+    }
+
+    /*         specs info            */
+    #allspectsInfo {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    /*         phone colors info            */
+    #phoneColors, #SpectsSumary {
+        width: 50%;
+        height: auto;
+    }
+
+    #phoneColors {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #colorsAvailable {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #colors {
+        width: auto;
+        height: 700px;
+    }
+
+
+
+    .circles {
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+    }
+
+    .gold {
+        background-color: #F7E3A8;
+    }
+    .platinum {
+        background-color: #BAC0C0;
+    }
+    .blueSteel {
+        background-color: #7170CB;
+    }
+    .brownLeather {
+        background-color: #C86C2C;
+    }
+    .blackLeather {
+        background-color: #3B3B3B;
+    }
+
+    /*         specs info            */
+    #SpectsSumary {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #SpectsSumary i {
+        font-size: 5em;
+    }
+
+    #specsSumaryText {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #specsSumaryText ul {
+        list-style-type: none;
+    }
+
+    #specsTitle {
+        opacity: 0.5;
+    }
+
+    /**********************************************************/
+    /*******               Subscribirse                 *******/
+    /**********************************************************/
+    #PreorderForm {
+        background-color: #d4d4d4;
+        padding: 3em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #email {
+        width: 35em;
+        height: 3em;
+    }
+
+    #submit {
+        background-color: rgb(243, 186, 0);
+        border: none;
+        height: 2.5em;
+        width: 15em;
+    }
+
+    /**********************************************************/
+    /*******                   Footer                   *******/
+    /**********************************************************/
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #2e2e2e;
+        height: 2em;
+        color: #666666;
+    }
+
+
+
+    @-webkit-keyframes bg-animation {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-moz-keyframes bg-animation {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes bg-animation { 
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+}
+

@@ -1,0 +1,205 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="js/script.js"></script>
+	<title>Landing</title>
+</head>
+<!-- Iniciamos el cuerpo de la pagina -->
+
+<body>
+
+	<!-- Inicio del header -->
+	<header id="header">
+
+		<!-- -- -- -- -- -- -- -- -- -- -->
+		<!-- -- -- -- NAV BAR  -- -- -- -->
+		<!-- -- -- -- -- -- -- -- -- -- -->
+		<nav id="nav-bar">
+			<!-- opciones de la barra de navegacion -->
+			<div id="menu-options">
+				<nav id="logo" class="nav-padding"><a class="">WR</a></nav>
+				<a id="menu-button-m" class="nav-padding" onclick="mostrar()"><i class="material-icons">menu</i></a>
+				<a id="menu-button-o" class="nav-padding" onclick="ocultar()">x</a>
+			</div>
+			<ul id="nav-menu">
+				<li class="nav-option"><a onclick="ocultar()" href="#designInfo" class="nav-link">Features</a></li>
+				<li class="nav-option"><a onclick="ocultar()" href="#allspectsInfo" class="nav-link">Support</a> </li>
+				<li class="nav-option"><a onclick="ocultar()" href="#PreorderForm" class="nav-link">Preorder Now!</a>
+				</li>
+			</ul>
+		</nav>
+
+
+
+		<!-- descripcion de la pagina con video de fondo -->
+		<div id="headerDiv">
+			<div id="whitespace">
+				<img id="header-img" src="IMG/render final.png">
+			</div>
+			<!-- info principal -->
+			<div id="headerInfo">
+				<h1>WILPHONE B280B</h1>
+				<p>The mosft powerfull device for people who like performance and beauty</p>
+			</div>
+		</div>
+	</header>
+
+
+	<!-- seccion principal con todo el documento -->
+	<main id="main">
+		<hr>
+		<!-- Primera seccion con informacion general sobre el diseño -->
+		<section id="videoInfo">
+			<div id="videoInfoText">
+				<i class="material-icons">phone_android</i>
+				<h2 id="titleVideoInfo">Beautiful Design</h2>
+				<p id="pTextVideoInfo"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, culpa
+					obcaecati ad
+					repellendus officiis blanditiis! Animi, nihil magni? Dolores esse aut cupiditate. Ratione quasi,
+					velit mollitia
+					obcaecati nesciunt a dicta.</p>
+			</div>
+			<div id="videoContainer">
+				<video class="" id="video" controls muted>
+					<source src="./VIDEO/finalshot.mp4" type="video/mp4">
+			</video>
+			</div>
+		</section>
+		<hr>
+		<!-- seccion para hablar de los materiales que se utilizan -->
+		<section class="containerOfTwo" id="designInfo">
+			<div class="imgBgn" id="imageDesignInfo">
+				<img class="imgBgn" src="IMG/botones.png" alt="">
+			</div>
+			<div id="textDesignInfo">
+				<i class="material-icons md-36">edit_attributes</i>
+				<h2>Hight quality materials</h2>
+				<p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, eum magnam minima natus
+					accusantium vero vitae non tempora reiciendis blanditiis sit minus ducimus autem iure modi deserunt
+					officiis nisi
+					repellat. </p>
+			</div>
+		</section>
+		<hr>
+		<!-- seccion para hablar de la camara del celular -->
+		<section class="containerOfTwo" id="cameraInfo">
+			<div class="" id="imageCameraInfo">
+				<img class="imgBgn" src="IMG/camara.png" alt="">
+			</div>
+			<div class="" id="textCameraInfo">
+				<i class="material-icons">camera</i>
+				<h2 class="" id="titleVideoInfo">Powerfull Camera</h2>
+				<p class="" id="pTextVideoInfo"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam,
+					culpa
+					obcaecati ad repellendus officiis blanditiis! Animi, nihil magni? Dolores esse aut cupiditate.
+					Ratione quasi,
+					velit mollitia obcaecati nesciunt a dicta.</p>
+			</div>
+		</section>
+		<hr>
+		<!-- seccion para hablar de la pantalla -->
+		<section class="containerOfTwo" id="screnInfo">
+			<div class="right" id="imageScreenInfo">
+				<img src="IMG/pantalla.png" alt="" class="imgBgn">
+			</div>
+			<div class="left" id="textScreenInfo">
+				<i class="material-icons">4k</i>
+				<h2 class="left" id="titleVideoInfo">Super ZLed 4k screen</h2>
+				<p class="right" id="pTextVideoInfo"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam,
+					culpa
+					obcaecati ad repellendus officiis blanditiis! Animi, nihil magni? Dolores esse aut cupiditate.
+					Ratione quasi,
+					velit mollitia obcaecati nesciunt a dicta.</p>
+			</div>
+		</section>
+		<hr>
+		<!-- seccion para hablar del sonido -->
+		<section class="containerOfTwo" id="sound">
+			<div class="left" id="imageSoundInfo">
+				<img src="IMG/speaker.png" alt="" class="imgBgn">
+			</div>
+			<div class="right" id="textSoundInfo">
+				<i class="material-icons">surround_sound</i>
+				<h2 class="" id="titleVideoInfo">Dobil Almost Digital Sound</h2>
+				<p class="" id="pTextVideoInfo"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam,
+					culpa
+					obcaecati ad repellendus officiis blanditiis! Animi, nihil magni? Dolores esse aut cupiditate.
+					Ratione quasi,
+					velit mollitia obcaecati nesciunt a dicta.</p>
+			</div>
+		</section>
+		<!-- Seccion para habalar de todas las especificaciones -->
+		<hr />
+		<section id="allspectsInfo">
+			<!-- seccion para ver los colores de los telefonos -->
+
+			<div class="right" id="phoneColors">
+				<img src="IMG/gold.png" alt="colors" id="colors">
+
+				<div id="colorsAvailable" class="">
+					<div onmouseover="whatcolor('gold')" class="circles gold" id="goldId"
+						style="display: flex; align-items: center; justify-content: center;"><i
+							class="material-icons">touch_app</i></div>
+					<div onmouseover="whatcolor('platinum')" class="circles platinum"></div>
+					<div onmouseover="whatcolor('blueSteel')" class="circles blueSteel"></div>
+					<div onmouseover="whatcolor('brownLeather')" class="circles brownLeather"></div>
+					<div onmouseover="whatcolor('blackLeather')" class="circles blackLeather"></div>
+				</div>
+			</div>
+			<hr />
+			<!-- seccion para las especificaciones del telefono -->
+			<div class="" id="SpectsSumary">
+				<i class="material-icons">info</i>
+				<h2>Device Specs Sumary</h2>
+				<div id="specsSumaryText">
+					<div class="" id="specsTitle">
+						<ul class="no-decoration">
+							<li>Performance</li>
+							<li>Display</li>
+							<li>Storage</li>
+							<li>Camera</li>
+							<li>Battery</li>
+							<li>Ram</li>
+							<li>Launch Date</li>
+						</ul>
+					</div>
+					<div class="" id="descriptionItem">
+						<ul class="">
+							<li>64 Cores 3.2ghz</li>
+							<li>Super ZLed 4K</li>
+							<li>250gb nan flash</li>
+							<li>150mp back / 25mp front</li>
+							<li>15,000 mAh</li>
+							<li>8gb</li>
+							<li>No date yet</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- formulario para preordenar el telefono -->
+		</section>
+		<hr />
+		<!-- seccion del formulario de preordenar -->
+		<section id="PreorderForm">
+			<h2>Subscribe Now!</h2>
+			<p>Subscribe to get information about release date and 20% off your first purchase.</p>
+			<form id="form">
+				<input type="email" placeholder="Enter your email here" id="email"> <br>
+				<button type="submit" id="submit">Get started</button>
+			</form>
+		</section>
+	</main>
+
+	<!-- footer -->
+	<footer>
+		Design and coded by Wilson Romero &copy;
+	</footer>
+</body>
+
+</html>
