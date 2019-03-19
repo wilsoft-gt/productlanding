@@ -487,7 +487,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-image: url(/IMG/video\ wrapper.png);
+        background-image: url("/IMG/video wrapper.png");
         background-size: contain;
         background-repeat: no-repeat;
         /* border: red dotted 1px; */
