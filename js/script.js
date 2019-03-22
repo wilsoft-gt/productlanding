@@ -18,14 +18,38 @@ function whatcolor(color) {
     }
 }
 
+var media = window.matchMedia("(max-width: 769px)");
+
 function mostrar() {
-    document.getElementById("menu-button-m").style.display = "none";
-    document.getElementById("menu-button-o").style.display = "initial";
-    document.getElementById("nav-menu").style.display = "flex";    
+    if (media.matches) {
+        document.getElementById("menu-button-m").style.display = "none";
+        document.getElementById("menu-button-o").style.display = "initial";
+        document.getElementById("nav-menu").style.display = "flex";    
+    }
 }
 
 function ocultar() {
-    document.getElementById("menu-button-m").style.display = "initial";
-    document.getElementById("menu-button-o").style.display = "none";
-    document.getElementById("nav-menu").style.display = "none";    
+    if (media.matches) {
+        document.getElementById("menu-button-m").style.display = "initial";
+        document.getElementById("menu-button-o").style.display = "none";
+        document.getElementById("nav-menu").style.display = "none";    
+    }
 }
+
+/* function myFunction(x) {
+    if (x.matches) { // If media query matches
+        function mostrar() {
+            document.getElementById("menu-button-m").style.display = "none";
+            document.getElementById("menu-button-o").style.display = "initial";
+            document.getElementById("nav-menu").style.display = "flex";    
+        }
+        
+        function ocultar() {
+            document.getElementById("menu-button-m").style.display = "initial";
+            document.getElementById("menu-button-o").style.display = "none";
+            document.getElementById("nav-menu").style.display = "none"; 
+    } else {
+        console.log('NO phone');
+    }
+  }
+   */
